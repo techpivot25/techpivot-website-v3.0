@@ -1,0 +1,82 @@
+{
+  "header": {
+    "nav": {
+      "vision": "Visión y Liderazgo",
+      "story": "Nuestra Historia y Misión",
+      "leadership": "Equipo Directivo",
+      "offerings": "Servicios",
+      "product": "Producto",
+      "technologies": "Tecnologías",
+      "insights": "Recursos y Comunidad",
+      "blogs": "Blog",
+      "contact": "Contáctanos",
+      "career": "Carreras",
+      "concept": "Concepto",
+      "solution": "Solución",
+      "customDev": "Desarrollo a Medida",
+      "agenticAI": "IA Agéntica",
+      "generativeAI": "IA Generativa",
+      "saas": "Plataforma SaaS",
+      "cloud": "Nube y Seguridad",
+      "customSoftware": "Software a Medida",
+      "iot": "Soluciones IoT",
+      "consultancy": "Consultoría"
+    },
+    "cta": "Hablar con expertos",
+    "theme": { "light": "Cambiar a claro", "dark": "Cambiar a oscuro" },
+    "language": "Idioma"
+  },
+  "hero": {
+    "title1": "Creado Por IA,",
+    "title2": "Impulsado Por Inteligencia.",
+    "subtitle": "Diseñado para rendir. Apoyado para crecer. Ofrecemos soluciones de IA y digitales de vanguardia que generan resultados reales.",
+    "tagline": "Innovación | Excelencia | Colaboración | Crecimiento",
+    "cta": "Inicia Tu Proyecto",
+    "aiBadge": "IA y Machine Learning",
+    "aiDesc": "Redes neuronales de vanguardia que impulsan la automatización inteligente",
+    "devBadge": "Desarrollo Full-Stack",
+    "devDesc": "Herramientas y frameworks modernos para aplicaciones escalables"
+  },
+  "scroller": {
+    "eyebrow": "Producto · Concepto · Desarrollo a Medida",
+    "title": "Algoritmos antes que hardware.",
+    "subtitle": "Descubre cómo Racer™ convierte la infraestructura existente en mejoras de rendimiento medibles desplázate para ver la historia completa.",
+    "learnMore": "Saber más"
+  },
+  "services": {
+    "eyebrow": "Lo Que Ofrecemos",
+    "title": "Servicios Que Entregamos",
+    "subtitle": "Soluciones tecnológicas integrales adaptadas a las necesidades de tu negocio.",
+    "learnMore": "Saber más"
+  },
+  "about": {
+    "eyebrow": "Sobre Nosotros",
+    "titleA": "Tu socio de confianza para impulsar ambiciosas",
+    "titleB": "iniciativas de IA",
+    "subtitle": "TechPivot está a la vanguardia del desarrollo de software e IA, ayudando a marcas líderes a acelerar sus iniciativas digitales.",
+    "keyBenefits": "Beneficios Clave",
+    "benefit1": "Ejecución rápida con prácticas ágiles de desarrollo",
+    "benefit2": "Alianza estratégica para escalar negocios",
+    "benefit3": "Experiencia en IA agéntica para automatización inteligente",
+    "benefit4": "Escalado confiable con infraestructura empresarial",
+    "workWithUs": "Trabaja Con Nosotros",
+    "globalPresence": "Presencia Global",
+    "stats": {
+      "projects": "Proyectos Entregados",
+      "satisfaction": "Satisfacción del Cliente",
+      "engineers": "Ingenieros Expertos",
+      "support": "Soporte Global"
+    }
+  },
+  "footer": {
+    "tagline": "Tu socio de confianza para soluciones de IA y transformación digital de vanguardia. Construyendo el futuro, un proyecto a la vez.",
+    "offerings": "Servicios",
+    "products": "Productos",
+    "insights": "Recursos y Comunidad",
+    "getInTouch": "Contacto",
+    "rights": "© 2026 TechPivot Technologies & Consulting. Todos los derechos reservados.",
+    "faq": "Preguntas Frecuentes",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos del Servicio"
+  }
+}

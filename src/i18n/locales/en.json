@@ -1,0 +1,82 @@
+{
+  "header": {
+    "nav": {
+      "vision": "Vision & Leadership",
+      "story": "Our Story and Mission",
+      "leadership": "Leadership Team",
+      "offerings": "Offerings",
+      "product": "Product",
+      "technologies": "Capabilities",
+      "insights": "Insights & Community",
+      "blogs": "Blogs",
+      "contact": "Contact Us",
+      "career": "Career",
+      "concept": "Concept",
+      "solution": "Solution",
+      "customDev": "Custom Dev",
+      "agenticAI": "Agentic AI",
+      "generativeAI": "Generative AI",
+      "saas": "SaaS Platform",
+      "cloud": "Cloud & Security",
+      "customSoftware": "Custom Software",
+      "iot": "IoT Solutions",
+      "consultancy": "Consultancy"
+    },
+    "cta": "Talk to experts",
+    "theme": { "light": "Switch to light", "dark": "Switch to dark" },
+    "language": "Language"
+  },
+  "hero": {
+    "title1": "Transforming Open-Source LLMs into",
+     "title2": "Secure, Custom Enterprise Solutions.",
+    "subtitle": "TechPivot Technologies is an independent, global engineering services firm specializing in transforming open-source AI models (Llama, Mistral, Gemma, Falcon) into secure, high-performance, production-grade infrastructure bridging the gap between open-source innovation and enterprise-grade reliability.",
+    "tagline": "Innovation | Excellence | Collaboration | Growth",
+    "cta": "Talk To Expert",
+    "aiBadge": "AI & Machine Learning",
+    "aiDesc": "Cutting-edge neural networks powering intelligent automation",
+    "devBadge": "Full-Stack Development",
+    "devDesc": "Modern tools & frameworks for scalable applications"
+  },
+  "scroller": {
+    "eyebrow": "Product · Concept · Custom Dev",
+    "title": "Algorithms before hardware.",
+    "subtitle": "Explore how Racer™ turns existing infrastructure into measurable performance gains scroll to see the full story.",
+    "learnMore": "Learn more"
+  },
+  "services": {
+    "eyebrow": "What We Offer",
+    "title": "Services We Deliver",
+    "subtitle": "Comprehensive technology solutions tailored to your business needs.",
+    "learnMore": "Learn more"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "titleA": "Your trusted partner in delivering ambitious",
+    "titleB": "AI initiatives",
+    "subtitle": "TechPivot stands at the forefront of software and AI development, helping leading brands accelerate their digital initiatives.",
+    "keyBenefits": "Key Benefits",
+    "benefit1": "Fast execution with agile development practices",
+    "benefit2": "Strategic growth partnership for scaling businesses",
+    "benefit3": "Agentic AI expertise for intelligent automation",
+    "benefit4": "Reliable scaling with enterprise-grade infrastructure",
+    "workWithUs": "Work With Us",
+    "globalPresence": "Global Presence",
+    "stats": {
+      "projects": "Projects Delivered",
+      "satisfaction": "Client Satisfaction",
+      "engineers": "Expert Engineers",
+      "support": "Global Support"
+    }
+  },
+  "footer": {
+    "tagline": "Your trusted partner for cutting-edge AI and digital transformation solutions. Building the future, one project at a time.",
+    "offerings": "Offerings",
+    "products": "Products",
+    "insights": "Insights & Community",
+    "getInTouch": "Get in Touch",
+    "rights": "© 2026 TechPivot Technologies & Consulting. All rights reserved.",
+    "faq": "FAQ",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
