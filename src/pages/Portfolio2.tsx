@@ -30,7 +30,6 @@ interface PortfolioProject {
   tags: string[];
   highlights: string[];
   url?: string;
-  image: string;
   icon: typeof Building2;
 }
 
@@ -50,7 +49,6 @@ const portfolioProjects: PortfolioProject[] = [
       "Role-based access for owners, managers, and on-site staff",
     ],
     url: "https://bookandlink.com",
-    image: "/images/portfolio/bookandlink.jpg",
     icon: Building2,
   },
   {
@@ -69,7 +67,6 @@ const portfolioProjects: PortfolioProject[] = [
       "Built for peak-season traffic without performance degradation",
     ],
     url: "https://favotrip.co.uk",
-    image: "/images/portfolio/favotrip.jpg",
     icon: Plane,
   },
   {
@@ -86,7 +83,6 @@ const portfolioProjects: PortfolioProject[] = [
       "Conflict resolution logic for concurrent updates",
       "Built to scale with high SKU counts and order volume",
     ],
-    image: "/images/portfolio/syncmanager.jpg",
     icon: RefreshCw,
   },
   {
@@ -104,7 +100,6 @@ const portfolioProjects: PortfolioProject[] = [
       "Commission and payout handling across sellers",
     ],
     url: "https://omnimart.com",
-    image: "/images/portfolio/omnimart.jpg",
     icon: ShoppingBag,
   },
   {
@@ -121,7 +116,6 @@ const portfolioProjects: PortfolioProject[] = [
       "Parent and staff portals with role-specific views",
       "Built for independent schools and multi-branch institutions",
     ],
-    image: "/images/portfolio/edusuite.jpg",
     icon: GraduationCap,
   },
   {
@@ -138,7 +132,6 @@ const portfolioProjects: PortfolioProject[] = [
       "Configurable leave, attendance, and approval workflows",
       "Self-service portals for employees and managers",
     ],
-    image: "/images/portfolio/hrspace.jpg",
     icon: Users,
   },
   {
@@ -156,7 +149,6 @@ const portfolioProjects: PortfolioProject[] = [
       "Operator dashboard for managing listings at scale",
     ],
     url: "https://plistbooking.com",
-    image: "/images/portfolio/plistbooking.jpg",
     icon: CalendarClock,
   },
   {
@@ -174,7 +166,6 @@ const portfolioProjects: PortfolioProject[] = [
       "Built with patient trust and clarity as the design priority",
     ],
     url: "https://doctorgoapp.com",
-    image: "/images/portfolio/doctorgo.jpg",
     icon: HeartPulse,
   },
   {
@@ -193,7 +184,6 @@ const portfolioProjects: PortfolioProject[] = [
       "Built to handle a seasonal surge of nationwide participants",
     ],
     url: "https://www.thepushupchallenge.com.au",
-    image: "/images/portfolio/pushupchallenge.jpg",
     icon: Dumbbell,
   },
   {
@@ -211,7 +201,6 @@ const portfolioProjects: PortfolioProject[] = [
       "Reliability engineering for a system hotels depend on daily",
     ],
     url: "https://www.octorate.com",
-    image: "/images/portfolio/octorate.jpg",
     icon: Layers,
   },
   {
@@ -229,7 +218,6 @@ const portfolioProjects: PortfolioProject[] = [
       "Tradesperson-side job management and scheduling",
       "Trust and verification built into the matching flow",
     ],
-    image: "/images/portfolio/homehero.jpg",
     icon: Home,
   },
 ];
@@ -283,7 +271,7 @@ const Portfolio = () => {
       "All",
       ...Array.from(new Set(portfolioProjects.map((p) => p.category))),
     ],
-    [],
+    []
   );
 
   const filteredProjects = useMemo(
@@ -291,7 +279,7 @@ const Portfolio = () => {
       activeCategory === "All"
         ? portfolioProjects
         : portfolioProjects.filter((p) => p.category === activeCategory),
-    [activeCategory],
+    [activeCategory]
   );
 
   return (
@@ -307,10 +295,7 @@ const Portfolio = () => {
           content="platform development portfolio, SaaS case studies, booking engine development, marketplace development, multi-tenant platform engineering"
         />
         <link rel="canonical" href="https://techpivot.in/portfolio" />
-        <meta
-          property="og:title"
-          content="Portfolio | TechPivot Technologies"
-        />
+        <meta property="og:title" content="Portfolio | TechPivot Technologies" />
         <meta
           property="og:description"
           content="Platforms we've built and shipped across travel, hospitality, healthcare, HR, education, and commerce."
@@ -335,12 +320,13 @@ const Portfolio = () => {
                 </p>
                 <div className="text-lg text-muted-foreground leading-relaxed text-left space-y-5">
                   <p>
-                    Every project below is a real system running in production —
-                    used daily by hotel operators, patients, tradespeople,
-                    students, and HR teams across multiple countries. We work
-                    across the stack: booking and reservation engines,
-                    multi-tenant SaaS, two-sided marketplaces, and the sync
-                    infrastructure that keeps it all consistent.
+                    Every project below is a real system running in
+                    production — used daily by hotel operators, patients,
+                    tradespeople, students, and HR teams across multiple
+                    countries. We work across the stack: booking and
+                    reservation engines, multi-tenant SaaS, two-sided
+                    marketplaces, and the sync infrastructure that keeps it
+                    all consistent.
                   </p>
                   <p>
                     Browse by category below, or reach out and we'll walk you
@@ -395,8 +381,8 @@ const Portfolio = () => {
                   Projects
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  Filter by category to see the platforms closest to what you're
-                  building.
+                  Filter by category to see the platforms closest to what
+                  you're building.
                 </p>
               </AnimatedSection>
 
@@ -427,101 +413,74 @@ const Portfolio = () => {
                       animation="fadeUp"
                       delay={i * 100}
                     >
-                      <div className="h-full flex flex-col rounded-2xl bg-[#EAF6FC] dark:bg-secondary/10 border border-[#D3ECF6] dark:border-border hover:border-primary/50 transition-all duration-300 overflow-hidden">
-                        {/* Screenshot */}
-                        <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
-                          <img
-                            src={project.image}
-                            alt={`${project.title} — ${project.tagline}`}
-                            loading="lazy"
-                            className="w-full h-full object-cover object-top"
-                            onError={(e) => {
-                              // Fallback if a screenshot hasn't been added yet for this project
-                              (
-                                e.currentTarget as HTMLImageElement
-                              ).style.display = "none";
-                              const fallback = e.currentTarget
-                                .nextElementSibling as HTMLElement | null;
-                              if (fallback) fallback.style.display = "flex";
-                            }}
-                          />
-                          <div
-                            className="absolute inset-0 hidden items-center justify-center bg-muted"
-                            style={{ display: "none" }}
-                          >
-                            <Icon className="w-10 h-10 text-muted-foreground/40" />
+                      <div className="h-full flex flex-col p-6 rounded-2xl bg-secondary/10 border border-border hover:border-primary/50 transition-all duration-300">
+                        {/* Header */}
+                        <div className="flex items-start justify-between mb-4">
+                          <div className="flex items-start gap-4">
+                            <div className="shrink-0 w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center">
+                              <Icon className="w-5 h-5 text-primary" />
+                            </div>
+                            <div>
+                              <span className="text-xs font-bold text-primary uppercase tracking-wide">
+                                {project.industry}
+                                {project.region ? ` · ${project.region}` : ""}
+                              </span>
+                              <h3 className="text-xl font-bold text-foreground mt-1">
+                                {project.title}
+                              </h3>
+                              <p className="text-sm font-medium text-muted-foreground mt-0.5">
+                                {project.tagline}
+                              </p>
+                            </div>
                           </div>
                         </div>
 
-                        <div className="flex flex-col flex-1 p-6">
-                          {/* Header */}
-                          <div className="flex items-start justify-between mb-4">
-                            <div className="flex items-start gap-4">
-                              <div className="shrink-0 w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center">
-                                <Icon className="w-5 h-5 text-primary" />
-                              </div>
-                              <div>
-                                <span className="text-xs font-bold text-primary uppercase tracking-wide">
-                                  {project.industry}
-                                  {project.region ? ` · ${project.region}` : ""}
-                                </span>
-                                <h3 className="text-xl font-bold text-foreground mt-1">
-                                  {project.title}
-                                </h3>
-                                <p className="text-sm font-medium text-muted-foreground mt-0.5">
-                                  {project.tagline}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
+                        <p className="text-muted-foreground mb-6">
+                          {project.description}
+                        </p>
 
-                          <p className="text-muted-foreground mb-6">
-                            {project.description}
-                          </p>
+                        {/* Highlights */}
+                        <ul className="space-y-2.5 mb-6">
+                          {project.highlights.map((highlight) => (
+                            <li
+                              key={highlight}
+                              className="flex items-start gap-2.5 text-sm text-muted-foreground"
+                            >
+                              <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                              <span>{highlight}</span>
+                            </li>
+                          ))}
+                        </ul>
 
-                          {/* Highlights */}
-                          <ul className="space-y-2.5 mb-6">
-                            {project.highlights.map((highlight) => (
-                              <li
-                                key={highlight}
-                                className="flex items-start gap-2.5 text-sm text-muted-foreground"
-                              >
-                                <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
-                                <span>{highlight}</span>
-                              </li>
-                            ))}
-                          </ul>
+                        {/* Tags */}
+                        <div className="flex flex-wrap gap-2 mb-6">
+                          {project.tags.map((tag) => (
+                            <span
+                              key={tag}
+                              className="text-xs bg-muted text-muted-foreground px-3 py-1 rounded-full border border-border"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
 
-                          {/* Tags */}
-                          <div className="flex flex-wrap gap-2 mb-6">
-                            {project.tags.map((tag) => (
-                              <span
-                                key={tag}
-                                className="text-xs bg-muted text-muted-foreground px-3 py-1 rounded-full border border-border"
-                              >
-                                {tag}
-                              </span>
-                            ))}
-                          </div>
-
-                          {/* CTA */}
-                          <div className="mt-auto">
-                            {project.url ? (
-                              <a
-                                href={project.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-2 w-full justify-center px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors"
-                              >
-                                Visit Live Site
-                                <ArrowUpRight className="w-4 h-4" />
-                              </a>
-                            ) : (
-                              <button className="w-full px-6 py-3 bg-muted text-foreground font-semibold rounded-lg border border-border hover:bg-muted/80 transition-colors">
-                                Ask Us About This Project
-                              </button>
-                            )}
-                          </div>
+                        {/* CTA */}
+                        <div className="mt-auto">
+                          {project.url ? (
+                            <a
+                              href={project.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 w-full justify-center px-6 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors"
+                            >
+                              Visit Live Site
+                              <ArrowUpRight className="w-4 h-4" />
+                            </a>
+                          ) : (
+                            <button className="w-full px-6 py-3 bg-muted text-foreground font-semibold rounded-lg border border-border hover:bg-muted/80 transition-colors">
+                              Ask Us About This Project
+                            </button>
+                          )}
                         </div>
                       </div>
                     </AnimatedSection>
@@ -539,10 +498,10 @@ const Portfolio = () => {
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Founders and operators in travel, hospitality, healthcare,
-                education, HR, and commerce who need a platform that works the
-                way their business actually runs — multi-tenant from the start,
-                resilient under real traffic, and simple enough for the people
-                using it every day.
+                education, HR, and commerce who need a platform that works
+                the way their business actually runs — multi-tenant from the
+                start, resilient under real traffic, and simple enough for
+                the people using it every day.
               </p>
             </div>
           </section>
@@ -555,8 +514,8 @@ const Portfolio = () => {
                   Have a platform in mind?
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Tell us what you're building and we'll show you which of these
-                  projects is the closest reference point.
+                  Tell us what you're building and we'll show you which of
+                  these projects is the closest reference point.
                 </p>
                 <button className="px-8 py-4 bg-primary text-primary-foreground font-bold rounded-lg hover:bg-primary/90 transition-colors">
                   Schedule a Consultation

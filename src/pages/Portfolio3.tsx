@@ -427,7 +427,7 @@ const Portfolio = () => {
                       animation="fadeUp"
                       delay={i * 100}
                     >
-                      <div className="h-full flex flex-col rounded-2xl bg-[#EAF6FC] dark:bg-secondary/10 border border-[#D3ECF6] dark:border-border hover:border-primary/50 transition-all duration-300 overflow-hidden">
+                      <div className="h-full flex flex-col rounded-2xl bg-secondary/10 border border-border hover:border-primary/50 transition-all duration-300 overflow-hidden">
                         {/* Screenshot */}
                         <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
                           <img
