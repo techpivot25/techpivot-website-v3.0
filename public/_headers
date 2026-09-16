@@ -1,0 +1,23 @@
+# Hashed build assets (JS/CSS from Vite) are immutable — cache for a year
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images — cache for a month
+/*.png
+  Cache-Control: public, max-age=2592000
+/*.webp
+  Cache-Control: public, max-age=2592000
+/*.ico
+  Cache-Control: public, max-age=2592000
+/*.svg
+  Cache-Control: public, max-age=2592000
+
+# HTML should always revalidate so users get new deploys immediately
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Sitemap/robots — short cache so search engines see updates promptly
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+/robots.txt
+  Cache-Control: public, max-age=3600
